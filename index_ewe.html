@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="public/assets/css/custom.css">
+    
+    <title>Conferencing tool made in Germany - Techpool</title>
+  </head>
+  <body>
+
+
+    <!-- BEGIN TOP NAVIGATION -->
+    <div class="row">
+        <div class="col s12">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo"><img src="public/assets/css/ewe_logo.svg"></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="">Unternehmen</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- CLOSE TOP NAVIGATION -->
+
+    <!-- BEGIN PROJECTOR SCREEN -->
+    <div class="row">
+        <div class="col s12">
+            <div class="projector-screen-container center">
+                <div id="id-projector-screen" class="cls-projector-screen">
+                    <video id="id-video-el-local" class="video-el-local" autoplay loop muted playsinline></video>
+                </div>
+                <div id="id-local-video-thumbnail-container" class="cls-local-video-thumbnail-container">
+                </div>
+                <div class="media-settings-menu">
+                    <ul class="list-inline">
+                        <li><span id="time-lapsed" class="grey-text lighten-4"></span></li>
+                        <li><a class="btn waves-effect grey darken-4" id="camera-state"><i class="material-icons">videocam</i></a></li>
+                        <li><a class="btn waves-effect grey darken-4" id="microphone-state"><i class="material-icons">mic</i></a></li>
+                        <li><a class="btn waves-effect indigo darken-4" id="toggle-meeting"><i class="material-icons">phone</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PROJECTOR SCREEN -->
+
+
+    <!-- BEGIN REMOTE VIDEOS -->
+    <div class="row">
+        <div class="col s12 center">
+            <div class="remote-videos-container">
+                <div id="id-remote-videos" class="cls-remote-videos-carousel">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END REMOTE VIDEOS -->
+
+
+    <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <div class="row">
+                  <div class="col l4 s12">
+                    <h5>Help</h5>
+                    <p class="grey-text text-darken-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                    <a class="btn waves-effect waves-light indigo darken-2" href="/support-us.html">Support</a>
+
+                  </div>
+                  <div class="col l4 s12">
+                    <h5>Join the Party</h5>
+                    <p class="grey-text text-darken-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                    <a class="btn waves-effect waves-light indigo darken-2" target="" href="">Chat with us</a>
+                  </div>
+                  <div class="col l4 s12">
+                    <h5>Connect</h5>
+                    <p class="grey-text text-darken-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                    <a class="btn waves-effect waves-light indigo darken-2" target="" href="">Follow us</a>
+                  </div>
+                </div>
+
+             
+              </div>
+            </div>
+          </div>
+
+
+    <h3> Logs </h3>
+    <div id="logs"></div>
+
+
+
+    <script type="text/javascript" src="public/assets/js/websocket.js"></script>
+    <script type="text/javascript" src="public/assets/js/remoteVideosCarousel.js"></script>
+
+  </body>
+</html>
