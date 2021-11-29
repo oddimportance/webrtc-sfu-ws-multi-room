@@ -152,8 +152,6 @@ function connect(stream) {
     // setLocalStream(stream);
 
     //let ws = new WebSocket("{{.}}")
-    // let ws = new WebSocket("wss://zoom.zama-syed.com/websocket")
-    // ws = new WebSocket("wss://zoom.zama-syed.com/websocket")
     ws = new WebSocket(`wss://${webSocketUrl}/websocket`);
 
 
