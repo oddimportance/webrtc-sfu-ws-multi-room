@@ -60,7 +60,7 @@ func main() {
 	trackLocals = map[string]*webrtc.TrackLocalStaticRTP{}
 
 	// Read index.html from disk into memory, serve whenever anyone requests /
-	indexHTML, err := ioutil.ReadFile("index_ewe.html")
+	indexHTML, err := ioutil.ReadFile("index.html")
 	if err != nil {
 		panic(err)
 	}
