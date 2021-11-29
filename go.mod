@@ -1,4 +1,4 @@
-module sfu-ws
+module webrtc-sfu-ws-multi-room
 
 go 1.13
 
