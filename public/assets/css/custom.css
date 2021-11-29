@@ -1,0 +1,83 @@
+.row {
+	margin-bottom: 0;
+}
+
+.row .col {
+	padding: 0;
+	margin: 0;
+}
+
+
+.nav-wrapper {
+	background-color: #56524b;
+}
+
+.brand-logo {
+	margin-left: 20px;
+}
+
+.brand-logo img {
+	height: 20px;
+	vertical-align: middle;
+}
+
+
+.projector-screen-container, .remote-videos-container {
+	background-color: #1B191A;
+	margin: 0;
+	padding: 0;
+}
+
+.cls-projector-screen {
+}
+
+.media-settings-menu {
+	width: 250px;
+	max-width: 500px;
+	background-color: #212121;
+	position: relative;
+	bottom: 50px;
+	z-index: 1000;
+	padding: 0;
+	margin: auto;
+	border-radius: 5px;
+}
+
+ul.list-inline {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list-inline > li {
+	display: inline-block;
+	padding: 0;
+}
+
+.cls-projector-screen > video {
+	/*
+	width: 100%;
+	height: 100%;
+	*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+.remote-videos-container {}
+
+.cls-remote-videos-carousel > video {
+	width: 150px;
+	height: 150px;
+}
+
+
+.cls-local-video-thumbnail-container > video {
+	width: 150px;
+	position: fixed;
+	top: 100px;
+	right: 100px;
+	-webkit-box-shadow: 5px 5px 16px 3px rgba(0,0,0,0.64); 
+	box-shadow: 5px 5px 16px 3px rgba(0,0,0,0.64);
+	border: 1px solid #f1f1f1;
+	
+}
